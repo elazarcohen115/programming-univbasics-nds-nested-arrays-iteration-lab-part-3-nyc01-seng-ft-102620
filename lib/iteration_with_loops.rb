@@ -5,7 +5,7 @@ def join_nested_strings(src)
     inner = 0
     while inner < src[outer].count do
       if src[outer][inner].is_a? String
-        string += "src[outer][inner] "
+        string += "#{src[outer][inner]}"
       end
       inner += 1
     end
