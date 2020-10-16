@@ -6,6 +6,7 @@ def join_nested_strings(src)
     while inner < src[outer].count do
       if src[outer][inner].is_a? String
         string_array += "src[outer][inner] "
+      end
     end
     inner += 1
   end
